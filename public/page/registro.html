@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Exploration</title>
+
+  <link rel='stylesheet' type='text/css' media='screen' href='../Css/login-register.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../Css/home.css'>
+  <style>
+    /* Estilos adicionais para o ícone de foto de perfil */
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+
+    <img src="../Img/config.png" alt="Settings" id="settingsIcon" class="">
+    <a href="./index.html"><img src="../Img/home.png" alt="Home" id="homeIcon" class=""></a>
+    <img src="../Img/tenet-fotor-bg-remover-2024041211152.png" alt="Logo" id="settingsLogo">
+  </nav>
+  <div class="container">
+    <h1>Registrar-se</h1>
+
+    <label for="photo" class="profile-preview-container">
+      <div class="profile-preview" id="profilePreview">
+        <img src="#" alt="Preview da Foto de Perfil">
+      </div>
+      <input type="file" id="photo" accept="image/*">
+    </label>
+
+    <div id="photoAlert" class="photoAlert">bababababa</div>
+
+    <div class="form">
+      <input type="email" id="email" class="input-field" placeholder="Email" autocomplete="email"><br>
+      <div id="emailAlert" class="emailAlert"></div>
+      <input type="password" id="senha" class="input-field" placeholder="Senha" autocomplete="new-password"><br>
+      <input type="password" id="senhaConfirmacao" class="input-field" placeholder="Confirmar senha"><br>
+      <div id="senhaAlert" class="senhaAlert"></div>
+      <button id="registrar" class="btn">Registrar</button>
+      <div id="btnAlert" class="btnAlert"></div>
+      <div id="loading" class="loading"></div>
+    </div>
+
+    <a href="login.html"> Login </a>
+  </div>
+  <script src="../Login-Register/register.js" type="module"></script>
+</body>
+
+</html>

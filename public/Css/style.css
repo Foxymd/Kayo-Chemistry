@@ -1,0 +1,100 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    width: 100%;
+}
+
+.score-board, .right-panel{
+    width: 20%; 
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.game-board {
+    width: 100%;
+    height: 100%;
+}
+
+.spiral-board {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.spiral-cell {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #ffffff;
+    display: flex;
+    position: absolute;
+    color: white;
+    justify-content: center;
+ }
+
+.player {
+    position: absolute;
+    margin: 5px;
+    font-size: 44px;
+    transition: all 0.5s ease;
+}
+
+.right-panel h3, .score-board h3 {
+    margin-bottom: 20px;
+}
+
+#answer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5e9c42;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#victoryMenu {
+    display: none; /* Oculta o menu por padrão */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    z-index: 1000;
+}
+
+#victoryMenu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#victoryMenu button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#victoryMenu button:hover {
+    background-color: #45a049;
+}

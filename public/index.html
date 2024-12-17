@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login com Firebase</title>
+  <!-- Caminhos corrigidos -->
+  <link rel="stylesheet" media="screen" href="Css/home.css">
+  <link rel="stylesheet" media="screen" href="Css/style.css">
+  <link rel='stylesheet' media='screen' href='Css/login-register.css'>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__settings" id="settingsBtn">
+      <img src="Img/tenet-fotor-bg-remover-2024041211152.png" alt="Logo" id="settingsLogo">
+    </div>
+  </nav>
+
+  <div class="container">
+    <img src="Img/user.png" alt="Logo" id="userLogo">
+    <div class="form">
+      <h1>Fazer Login</h1>
+      <form action="page/login.html">
+        <button id="login" class="btn">Login</button>
+      </form>
+      <div id="btnAlert" class="btnAlert"></div>
+      <div id="loading" class="loading"></div>
+    </div>
+    <img src="Img/check.png" alt="Logo" id="checkLogo">
+    <div class="form">
+      <h1>Encontrar Partida</h1>
+      <form action="page/doubleLogin.html">
+        <button type="submit" id="partida" class="btn">Partida</button>
+      </form>
+      <div id="btnAlert" class="btnAlert"></div>
+      <div id="loading" class="loading"></div>
+    </div>
+  </div>
+
+  <script src="Js/nav.js" type="module"></script>
+</body>
+
+</html>

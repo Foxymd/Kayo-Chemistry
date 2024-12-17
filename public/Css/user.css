@@ -1,0 +1,22 @@
+#profileImg{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid ;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.content{
+    position: absolute;
+    height: 1000%;
+    width: 100%;
+    background-color: hsla(11,80%,45%,1);
+    z-index: 0;
+    color: white;
+}
+

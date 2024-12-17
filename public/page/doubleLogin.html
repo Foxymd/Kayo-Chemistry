@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Exploration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='../Css/double.css'>
+</head>
+
+<body>
+  <div class="container double-container">
+    <!-- Login Player 1 -->
+    <div class="form">
+      <h2>Login Player 1</h2>
+      <input type="email" id="emailPlayer1" class="input-field" placeholder="Email" autocomplete="email"><br>
+      <div id="emailAlertPlayer1" class="emailAlert"></div>
+      <input type="password" id="senhaPlayer1" class="input-field" placeholder="Senha" autocomplete="current-password"><br>
+      <div id="senhaAlertPlayer1" class="senhaAlert"></div>
+    </div>
+
+    <!-- Login Player 2 -->
+    <div class="form">
+      <h2>Login Player 2</h2>
+      <input type="email" id="emailPlayer2" class="input-field" placeholder="Email" autocomplete="email"><br>
+      <div id="emailAlertPlayer2" class="emailAlert"></div>
+      <input type="password" id="senhaPlayer2" class="input-field" placeholder="Senha" autocomplete="current-password"><br>
+      <div id="senhaAlertPlayer2" class="senhaAlert"></div>
+    </div>
+  </div>
+
+  <!-- Botão único para login -->
+ 
+    <button id="loginBothPlayers" class="btn">Login</button>
+    <div id="btnAlert" class="btnAlert"></div>
+    <div id="loading" class="loading"></div>
+
+  <script src="../Login-Register/doubleLogin.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+export const questions3 = [
+  { question: "Qual é o nome da molécula de fórmula molecular H2O?", answer: "Água" },
+  { question: "Qual é a fórmula molecular do ácido clorídrico?", answer: "HCl" },
+  { question: "Qual é o nome do processo em que uma substância se transforma diretamente do estado sólido para o gasoso?", answer: "Sublimação" },
+  { question: "Qual é o elemento químico mais abundante no universo?", answer: "Hidrogênio" },
+  { question: "Qual é o nome do processo de formação de compostos orgânicos a partir de carbono e água em plantas?", answer: "Fotossíntese" },
+  { question: "Qual é a fórmula molecular do etanol?", answer: "C2H6O" },
+  { question: "Qual é a partícula subatômica com carga positiva?", answer: "Próton" },
+  { question: "Qual é a fórmula molecular do monóxido de carbono?", answer: "CO" },
+  { question: "Qual é o nome do composto químico CH3COOH?", answer: "Ácido acético" },
+  { question: "Qual é o número atômico do elemento carbono?", answer: "6" },
+  { question: "Qual é o nome do grupo funcional presente nas cetonas?", answer: "Carbonila" },
+  { question: "Qual é a fórmula molecular do ácido fosfórico?", answer: "H3PO4" },
+  { question: "Qual é o símbolo químico do elemento ouro?", answer: "Au" },
+  { question: "Qual é o elemento químico representado pelo símbolo Fe?", answer: "Ferro" },
+];

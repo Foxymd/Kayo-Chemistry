@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Exploration</title>
+
+  <link rel='stylesheet' type='text/css' href='../Css/home.css'>
+  <link rel='stylesheet' type='text/css' href='../Css/style.css'>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__settings" id="settingsBtn">
+      <img src="../Img/config.png" alt="Settings" id="settingsIcon">
+      <a href="../index.html"><img src="../Img/home.png" alt="Home" id="homeIcon"></a>
+      <img src="../Img/tenet-fotor-bg-remover-2024041211152.png" alt="Logo" id="settingsLogo">
+      <div class="settings__menu" id="settingsMenu">
+        <div class="container-profile">
+          <div class="settings__menu-profile">
+            <img src="" alt="Foto de Perfil" id="settingsProfileImg">
+          </div>
+          <div class="username" id="username">Username</div>
+        </div>
+        <ul>
+          <li><a href="#">Trocar Senha</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="score-board">
+      <h3>Score</h3>
+      <div id="scorePlayer1">Jogador 1 (👨‍🔬): 0</div>
+      <div id="scorePlayer2">Jogador 2 (👩‍🔬): 0</div>
+    </div>
+
+    <!-- Tabuleiro Espiral -->
+    <div class="game-board">
+      <div class="spiral-board" id="spiralBoard"></div>
+    </div>
+
+    <!-- Painel de Perguntas e Turnos -->
+    <div class="right-panel">
+      <div class="turn-selector">
+        <h3><span id="currentTurn">Jogador 1</span></h3>
+      </div>
+      <div class="question-area">
+        <h3 id="question">Pergunta de Química</h3>
+        <div id="options" class="options">
+          <!-- As opções de múltipla escolha serão inseridas aqui -->
+      </div>
+      <script type="module">
+        import { checkAnswer, skipTurn } from '../Js/script.js';
+        window.checkAnswer = checkAnswer;
+        window.skipTurn = skipTurn;
+      </script>
+      <input type="text" id="answer" placeholder="Digite sua resposta aqui">
+        <button id="submitAnswer" onclick="checkAnswer()">Responder</button>
+        <button id="submitAnswer" onclick="skipTurn()">Pular</button>
+      </div>
+    </div>
+  </div>
+  <div id="victoryMenu">
+    <h2 id="winnerMessage"></h2>
+    <button id="restartGameButton">Reiniciar</button>
+</div>
+
+
+  <script type="module" src="../Js/script.js"></script>
+</body>
+</html>

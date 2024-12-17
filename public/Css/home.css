@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    /* Branco */
+    color: #FF5733;
+    /* Laranja */
+}
+
+a {
+    color: #FF5733;
+}
+
+a:hover {
+    color: #FF8C66;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    /* Branco */
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__settings {
+    position: relative;
+    float: right;
+}
+
+#settingsIcon {
+    position: fixed;
+    top: 2px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Transição suave para a rotação */
+}
+
+#homeIcon {
+    position: fixed;
+    top: 2px;
+    right: 60px;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Transição suave para a rotação */
+}
+
+#settingsLogo {
+    position: fixed;
+    top: -60px;
+    left: 4px;
+    width: 150px;
+    /* height: 80px; */
+}
+
+.settings__menu {
+    position: fixed;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    /* Branco */
+    width: 250px;
+    padding: 10px;
+    display: none;
+    border-left: 10px solid #FF5733;
+    /* Laranja */
+    opacity: 0;
+    /* Opacidade inicial */
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    /* Transições suaves para opacidade e transformação */
+    transform: translateX(100%);
+    /* Inicialmente fora da tela */
+}
+
+.settings__menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.settings__menu ul li a {
+    color: #FF5733;
+    /* Laranja */
+    text-decoration: none;
+}
+
+.settings__menu ul li a:hover {
+    color: #ff8c66;
+    /* Laranja mais claro */
+
+}
+
+.settings__menu-profile {
+    width: 50px;
+    /* Largura da imagem de perfil */
+    height: 50px;
+    /* Altura da imagem de perfil */
+    border-radius: 50%;
+    /* Bordas arredondadas para criar uma imagem de perfil circular */
+    overflow: hidden;
+    /* Oculta qualquer parte da imagem que esteja fora do contêiner */
+    border: 1px solid #ffffff;
+}
+
+.settings__menu-profile img {
+    width: 100%;
+    /* A imagem ocupa 100% da largura do contêiner */
+    height: auto;
+    /* A altura é ajustada automaticamente para manter a proporção da imagem */
+}
+
+.container-profile {
+    border: 1px solid #FF5733; /* Laranja */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-color: #FF5733;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Adiciona estilos para o username */
+  .username {
+    margin-left: 10px;
+  }
+
+.perfil{
+    position: relative;
+    top: 5%;
+}
